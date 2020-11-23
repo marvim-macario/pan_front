@@ -1,0 +1,193 @@
+<!------ Include the above in your HEAD tag ---------->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/css/bootstrap-select.min.css">
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;700&display=swap" rel="stylesheet">
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/js/bootstrap-select.min.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <!--Panel-->
+        <div class="card text-center">
+          <div class="card-header default-color-dark white-text">
+            <h2 style="margin: 0;padding: 0;">Informações do Cliente</h2>
+          </div>
+          <div class="card-block">
+            <form action="" method="post">
+              <table class="table">
+                <tr>
+                  <td>
+                    Convênio: <span class="req">*</span>
+                    <select name="paymentmethodparent" class=" form-control" required>
+                      <option value="">Selecione o Convênio</option>
+                      <option value="bankchooser">Bank</option>
+                      <option value="bkashchooser">bKash</option>
+                      <option value="rocketchooser">Rocket</option>
+                    </select>
+                  </td>
+                  <td>
+                    Cpf: <span class="req">*</span>
+                    <input type="text" class="form-control">
+                  </td>
+                  <td>
+                    matricula<span class="req">*</span>
+                    <input type="text" class="form-control">
+                  </td>
+                  <td>
+                    Data de nasc.<span class="req">*</span>
+                    <input type="date" class="form-control">
+                  </td>
+                </tr>
+              </table>
+          </div>
+          <div class="row">
+            <div class="col-md-7">
+              <input type="submit" class="btn btn-info pull-right" id="update" value="Submit"
+                style="width: 300px;margin-top: -50px;">
+            </div>
+          </div>
+        </div>
+        </form>
+        <!--/.Panel-->
+      </div>
+
+    </div>
+
+  </div>
+  <div class="btn-group btn-group-toggle" data-toggle="buttons">
+    <label class="btn btn-primary active">
+      <input type="radio" name="options" id="option1" checked> Active
+    </label>
+    <label class="btn btn-primary">
+      <input type="radio" name="options" id="option2"> Radio
+    </label>
+    <label class="btn btn-primary">
+      <input type="radio" name="options" id="option3"> Radio
+    </label>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="card text-center">
+          <div class="card-header default-color-dark white-text">
+            <h2 style="margin: 0;padding: 0;">Informações do Cliente</h2>
+          </div>
+          <div class="card-block">
+            <form action="" method="post">
+              <table class="table">
+                <tr>
+                  <td>
+                    Convênio: <span class="req">*</span>
+                    <select name="paymentmethodparent" class=" form-control" required>
+                      <option value="">Selecione o Convênio</option>
+                      <option value="bankchooser">Bank</option>
+                      <option value="bkashchooser">bKash</option>
+                      <option value="rocketchooser">Rocket</option>
+                    </select>
+                  </td>
+                  <td>
+                    Cpf: <span class="req">*</span>
+                    <input type="text" class="form-control">
+                  </td>
+                  <td>
+                    matricula<span class="req">*</span>
+                    <input type="text" class="form-control">
+                  </td>
+                  <td>
+                    Data de nasc.<span class="req">*</span>
+                    <input type="date" class="form-control">
+                  </td>
+                </tr>
+              </table>
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <style>
+    html,
+    body {
+      font-family: 'Cabin', sans-serif;
+    }
+
+    .row {
+      margin-top: 100px;
+    }
+
+    .center {
+      margin: 0;
+      padding: 0;
+      background: #eceeef;
+      text-align: center;
+    }
+
+    .custom {
+      border: 1px solid darkblue;
+      border-radius: 10px;
+      margin: 0 2%;
+      padding: 0;
+    }
+
+    .req {
+      color: red;
+      font-weight: bold;
+    }
+
+    .card {
+      position: relative;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      background-color: #fff;
+      border: 1px solid grey;
+      border-radius: 5px !important;
+      box-shadow: 2px 5px 8px #80808080;
+      margin-top: 10px;
+    }
+
+    .card-block {
+      -webkit-box-flex: 1;
+      -webkit-flex: 1 1 auto;
+      -ms-flex: 1 1 auto;
+      flex: 1 1 auto;
+    }
+
+    .card-footer,
+    .card-header {
+      padding: .75rem 1.25rem;
+      background: #fff;
+      color: #000;
+    }
+
+    .paymentmethod,
+    .bankmethod {
+      display: none;
+    }
+
+    td {
+      text-align: left;
+    }
+  </style>
+
+</body>
+
+</html>
